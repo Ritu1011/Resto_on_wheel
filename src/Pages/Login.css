@@ -1,0 +1,50 @@
+.loginBox{
+    width: 26%;
+    height: 500px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    margin: auto;
+    margin-top: 50px;
+    align-items: center;
+    text-align: center;
+}
+.sign_link{
+    color: #f1492c;
+    text-decoration: underline;
+}
+.loginBox_img{
+    width: 120px;
+    height: 100px
+}
+.login_btn{
+    width: 70%;
+    height: 45px;
+    background-color: #f1492c;
+    margin-bottom: 20px;
+}
+.loginBox input{
+    width: 70%;
+    height: 40px;
+    color: gray;
+    font-size: 20px;
+    border: 1px solid gray;
+    margin-bottom: 20px;
+
+}
+.google
+{
+    text-align: center;
+    justify-content: center;
+    width: 70%;
+    margin-left: 60px;
+    border: 1px solid gray;
+    height: 50px;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 70px;
+}
+.google p{
+    padding-right: 3px;
+    padding: 8px;
+}

@@ -1,0 +1,56 @@
+.menu_container{
+    width: 70%;
+    height: 150px;
+    margin: auto;
+    display: flex;
+    margin-top: 40px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+.menu_img{
+    width: 120px;
+    height: 120px;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+.pagination{
+    background-color:#f1492c;
+    padding: 10px 40px ;
+    border-radius: 25px;
+    font-size: 18px;
+    margin-top: 50px;
+    
+    font-weight: 500; 
+ }
+ .pagination_btn{
+width: 30%;
+display: flex;
+margin: auto;
+justify-content: space-evenly;
+ }
+ .menu_description{
+    width: 60%;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-left: 30px;
+    display: flex;}
+
+.menu_add{ 
+    width: 100px;
+    height: 40px;
+    background-color:#f1492c;
+    /* padding: 10px 40px ; */
+    border-radius: 25px;
+    font-size: 18px;
+    /* margin-top: 50px; */
+    
+    font-weight: 500; }
+.menu_details{ 
+    background-color:#f1492c;
+    /* padding: 10px 40px ; */
+    width: 100px;
+    height: 40px;
+    border-radius: 25px;
+    font-size: 18px;
+    /* margin-top: 50px; */
+    
+    font-weight: 500; }
