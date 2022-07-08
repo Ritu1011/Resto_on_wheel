@@ -24,8 +24,7 @@ return (
             <Route path="/menupage/:id" element={<MenuCart/>} />
             <Route path="/location" element={<Location/>} />
             <Route path="/login" element={<Login/>} />
-
-            <Route path="/breakfast" element={<Breakfast/>} />
+          <Route path="/breakfast" element={<Breakfast/>} />
             <Route path="/breakfast/:id" element={<BreakfstCart/>} />
             <Route path="/dinner" element={<Dinner/>} />
             <Route path="/dinner/:id" element={<DinnerCart/>} />

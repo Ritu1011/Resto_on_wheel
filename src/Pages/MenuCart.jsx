@@ -6,6 +6,7 @@ import "./Style.css"
 function  MenuCart(){
    const [loading, setLoading] = useState(true);
     const [data, setData] = useState([]);
+    const [cart ,setCart]=useState([]);
     const params = useParams();
     useEffect(() => {
       setLoading(true);
@@ -23,6 +24,9 @@ function  MenuCart(){
         });
     }, [params.id]);
 
+    const AddtoCart=()=>{
+      
+    }
 
     return (
         <div>
@@ -45,7 +49,7 @@ function  MenuCart(){
                </div>
                <h3  className="name_D"> {data?.price}</h3>
                <div style={{display:"flex",justifyContent:"space-evenly",width:"50%"}}>
-               <button className="Add"><h2> ADD TO CART </h2></button>
+               <button className="Add" onClick={AddtoCart}><h > ADD TO CART </h></button>
               <Link to="/"> <button className="Add"><h2> CANCLE </h2></button></Link>
                </div>
               </div>

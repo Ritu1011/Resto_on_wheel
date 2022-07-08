@@ -2,16 +2,18 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { Link ,useParams } from "react-router-dom";
 import "./Style.css"
+import { useNavigate } from "react-router-dom";
 
 function  BreakfstCart(){
    const [loading, setLoading] = useState(true);
+   const navigate=useNavigate()
     const [data, setData] = useState([]);
     const params = useParams();
     useEffect(() => {
       setLoading(true);
       const { id } = params;
       axios({
-        url: ` http://localhost:8080/Breakfast/${id}`,
+        url: `http://localhost:8080/Breakfast/${id}`,
         method: "GET"
       })
         .then((res) => {
@@ -22,6 +24,12 @@ function  BreakfstCart(){
           setLoading(false);
         });
     }, [params.id]);
+console.log(data ,"data")
+    const postData=()=>{
+      axios.post(`http://localhost:8080/cart`,{...data}).then(()=>{
+      alert("data added to cart ")
+         })
+  }
 
 
     return (
@@ -45,7 +53,13 @@ function  BreakfstCart(){
                </div>
                <h3  className="name_D"> {data?.price}</h3>
                <div style={{display:"flex",justifyContent:"space-evenly",width:"50%"}}>
-               <button className="Add"><h2> ADD TO CART </h2></button>
+
+             <button  onClick={()=>{
+             navigate ("/cart")
+             return postData()
+             }} 
+             className="Add"><h2> ADD TO CART </h2></button>
+
               <Link to="/"> <button className="Add"><h2> CANCLE </h2></button></Link>
                </div>
               </div>

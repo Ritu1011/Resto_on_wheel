@@ -1,260 +1,278 @@
 {
-    "Dinner":[
-        {
-            "id":"1",
-            "img":"https://i.ibb.co/Kmvyhdn/dinner6.png",
-            "name":"French fries with cheese",
-            "price":"$19.99",
-            "category":"veg"
-
-        }, {
-            "id":"2",
-            "img":"https://i.ibb.co/qFcr7vr/dinner2.png",
-            "name":"Lemony Salmon",
-            "price":"$12.99"
-            ,"category":"veg"
-        }, {
-            "id":"3",
-            "img":"https://i.ibb.co/pLtqXfB/dinner3.png",
-            "name":"Pork Tenderiain",
-            "price":"11.99"
-            ,"category":"nonveg"
-        }, {
-            "id":"4",
-            "img":"https://i.ibb.co/fqzz97r/dinner1.png",
-            "name":"Salmon With Grapefruits",
-            "price":"$10.60"
-            ,"category":"veg"
-        }, {
-            "id":"5",
-            "img":"https://i.ibb.co/Kynmst1/dinner5.png",
-            "name":"Curlic Butter baked salmon",
-            "category":"veg",
-            "price":"$7.99"
-        }, {
-            "id":"6",
-            "img":"https://i.ibb.co/McDVR1C/dinner4.png",
-            "name":"Baked Chiken",
-            "category":"nonveg",
-            "price":"$10.99"
-        }
-    ],
-    "Lunch":[
-        {
-            "id":"7",
-            "img":"https://i.ibb.co/Vttm4HL/lunch6.png",
-            "name":"Honet Soy Salmon",
-            "category":"veg",
-            "price":"$10.99" 
-            
-        },
-        {
-            "id":"8",
-            "img":"https://i.ibb.co/R3rLv58/lunch4.png",
-            "name":"Indian Lunch",
-            "category":"veg",
-            "price":"$8.99" 
-        },
-        {
-            "id":"9",
-            "img":"https://i.ibb.co/zxQ2mR3/lunch5.png",
-            "name":"Beaf Steak",
-            "category":"nonveg",
-            "price":"$10.99" 
-        },
-        {
-            "id":"10",
-            "img":"https://i.ibb.co/Ph7HZpK/lunch1.png",
-            "name":"Healthy Meal plan",
-            "category":"veg",
-            "price":"$9.99" 
-        },
-        {
-            "id":"11",
-            "img":"https://i.ibb.co/5BPBJKH/lunch3.png",
-            "name":"Trragon_Rubbed_salmon",
-            "category":"veg",
-            "price":"$8.99" 
-        },
-        {
-            "id":"12",
-            "img":"https://i.ibb.co/8Yfk9Y4/lunch2.png",
-            "name":"Fried Chicken Bento",
-            "category":"nonveg",
-            "price":"$11.99" 
-        }
-    ],
-    "Breakfast":[
-        {
-            "id":"13",
-            "img":"https://i.ibb.co/Ph7HZpK/lunch1.png",
-            "name":"Healthy Meal plan",
-            "category":"veg",
-            "price":"$9.99" 
-        },
-
-        { "id":"14",
-            "img":"https://i.ibb.co/Kynmst1/dinner5.png",
-            "name":"Curlic Butter baked salmon",
-            "category":"veg",
-            "price":"$7.99"
-          },
-          {
-            "id":"15",
-            "img":"https://i.ibb.co/pwjPPM3/breakfast5.png" ,
-            "name":"Toast Egg Butter" ,
-            "category":"nonveg",
-            "price":"$8.99"
-          },
-          {
-            "id":"16",
-            "img":"https://i.ibb.co/fSvwzpZ/breakfast6.png" ,
-            "name":"Full Breakfast Egg Toast" ,
-            "category":"nonveg",
-            "price":"$9.99"
-          },
-          {
-            "id":"17",
-            "img":"https://i.ibb.co/YWxtdqc/breakfast1.png" ,
-            "name":"Bagel and Cream Cheese" ,
-            "category":"veg",
-            "price":"$12.99"
-          },
-          {
-            "id":"18",
-            "img":"https://i.ibb.co/QC0KJPt/breakfast4.png" ,
-            "name":"Eggs Benedict" ,
-            "category":"veg",
-            "price":"$15.99"
-          }
-    ],
-"All":[
+  "Dinner": [
     {
-        "id":"1",
-        "img":"https://i.ibb.co/Kmvyhdn/dinner6.png",
-        "name":"French fries with cheese",
-        "price":"$19.99",
-        "category":"veg"
-
-    }, {
-        "id":"2",
-        "img":"https://i.ibb.co/qFcr7vr/dinner2.png",
-        "name":"Lemony Salmon",
-        "price":"$12.99"
-        ,"category":"veg"
-    }, {
-        "id":"3",
-        "img":"https://i.ibb.co/pLtqXfB/dinner3.png",
-        "name":"Pork Tenderiain",
-        "price":"11.99"
-        ,"category":"nonveg"
-    }, {
-        "id":"4",
-        "img":"https://i.ibb.co/fqzz97r/dinner1.png",
-        "name":"Salmon With Grapefruits",
-        "price":"$10.60"
-        ,"category":"veg"
-    }, {
-        "id":"5",
-        "img":"https://i.ibb.co/Kynmst1/dinner5.png",
-        "name":"Curlic Butter baked salmon",
-        "category":"veg",
-        "price":"$7.99"
-    }, {
-        "id":"6",
-        "img":"https://i.ibb.co/McDVR1C/dinner4.png",
-        "name":"Baked Chiken",
-        "category":"nonveg",
-        "price":"$10.99"
+      "id": "1",
+      "img": "https://i.ibb.co/Kmvyhdn/dinner6.png",
+      "name": "French fries with cheese",
+      "price": "9.99",
+      "category": "veg"
+    },
+    {
+      "id": "2",
+      "img": "https://i.ibb.co/qFcr7vr/dinner2.png",
+      "name": "Lemony Salmon",
+      "price": "12.99",
+      "category": "veg"
+    },
+    {
+      "id": "3",
+      "img": "https://i.ibb.co/pLtqXfB/dinner3.png",
+      "name": "Pork Tenderiain",
+      "price": "11.99",
+      "category": "nonveg"
+    },
+    {
+      "id": "4",
+      "img": "https://i.ibb.co/fqzz97r/dinner1.png",
+      "name": "Salmon With Grapefruits",
+      "price": "10.60",
+      "category": "veg"
+    },
+    {
+      "id": "5",
+      "img": "https://i.ibb.co/Kynmst1/dinner5.png",
+      "name": "Curlic Butter baked salmon",
+      "category": "veg",
+      "price": "7.99"
+    },
+    {
+      "id": "6",
+      "img": "https://i.ibb.co/McDVR1C/dinner4.png",
+      "name": "Baked Chiken",
+      "category": "nonveg",
+      "price": "10.99"
     }
-,
-
+  ],
+  "Lunch": [
     {
-        "id":"7",
-        "img":"https://i.ibb.co/Vttm4HL/lunch6.png",
-        "name":"Honet Soy Salmon",
-        "category":"veg",
-        "price":"$10.99" 
-        
+      "id": "7",
+      "img": "https://i.ibb.co/Vttm4HL/lunch6.png",
+      "name": "Honet Soy Salmon",
+      "category": "veg",
+      "price": "10.99"
     },
     {
-        "id":"8",
-        "img":"https://i.ibb.co/R3rLv58/lunch4.png",
-        "name":"Indian Lunch",
-        "category":"veg",
-        "price":"$8.99" 
+      "id": "8",
+      "img": "https://i.ibb.co/R3rLv58/lunch4.png",
+      "name": "Indian Lunch",
+      "category": "veg",
+      "price": "8.99"
     },
     {
-        "id":"9",
-        "img":"https://i.ibb.co/zxQ2mR3/lunch5.png",
-        "name":"Beaf Steak",
-        "category":"nonveg",
-        "price":"$10.99" 
+      "id": "9",
+      "img": "https://i.ibb.co/zxQ2mR3/lunch5.png",
+      "name": "Beaf Steak",
+      "category": "nonveg",
+      "price": "10.99"
     },
     {
-        "id":"10",
-        "img":"https://i.ibb.co/Ph7HZpK/lunch1.png",
-        "name":"Healthy Meal plan",
-        "category":"veg",
-        "price":"$9.99" 
+      "id": "10",
+      "img": "https://i.ibb.co/Ph7HZpK/lunch1.png",
+      "name": "Healthy Meal plan",
+      "category": "veg",
+      "price": "9.99"
     },
     {
-        "id":"11",
-        "img":"https://i.ibb.co/5BPBJKH/lunch3.png",
-        "name":"Trragon_Rubbed_salmon",
-        "category":"veg",
-        "price":"$8.99" 
+      "id": "11",
+      "img": "https://i.ibb.co/5BPBJKH/lunch3.png",
+      "name": "Trragon_Rubbed_salmon",
+      "category": "veg",
+      "price": "8.99"
     },
     {
-        "id":"12",
-        "img":"https://i.ibb.co/8Yfk9Y4/lunch2.png",
-        "name":"Fried Chicken Bento",
-        "category":"nonveg",
-        "price":"$11.99" 
+      "id": "12",
+      "img": "https://i.ibb.co/8Yfk9Y4/lunch2.png",
+      "name": "Fried Chicken Bento",
+      "category": "nonveg",
+      "price": "11.99"
     }
-,
-
-       { "id":"13",
-        "img":"https://i.ibb.co/Ph7HZpK/lunch1.png",
-        "name":"Healthy Meal plan",
-        "category":"veg",
-        "price":"$9.99" 
+  ],
+  "Breakfast": [
+    {
+      "id": "13",
+      "img": "https://i.ibb.co/Ph7HZpK/lunch1.png",
+      "name": "Healthy Meal plan",
+      "category": "veg",
+      "price": "9.99"
     },
-
-    { "id":"14",
-        "img":"https://i.ibb.co/Kynmst1/dinner5.png",
-        "name":"Curlic Butter baked salmon",
-        "category":"veg",
-        "price":"$7.99"
-      },
-      {
-        "id":"15",
-        "img":"https://i.ibb.co/pwjPPM3/breakfast5.png" ,
-        "name":"Toast Egg Butter" ,
-        "category":"nonveg",
-        "price":"$8.99"
-      },
-      {
-        "id":"16",
-        "img":"https://i.ibb.co/fSvwzpZ/breakfast6.png" ,
-        "name":"Full Breakfast Egg Toast" ,
-        "category":"nonveg",
-        "price":"$9.99"
-      },
-      {
-        "id":"17",
-        "img":"https://i.ibb.co/YWxtdqc/breakfast1.png" ,
-        "name":"Bagel and Cream Cheese" ,
-        "category":"veg",
-        "price":"$12.99"
-      },
-      {
-        "id":"18",
-        "img":"https://i.ibb.co/QC0KJPt/breakfast4.png" ,
-        "name":"Eggs Benedict" ,
-        "category":"veg",
-        "price":"$15.99"
-      }
-]
-    
+    {
+      "id": "14",
+      "img": "https://i.ibb.co/Kynmst1/dinner5.png",
+      "name": "Curlic Butter baked salmon",
+      "category": "veg",
+      "price": "7.99"
+    },
+    {
+      "id": "15",
+      "img": "https://i.ibb.co/pwjPPM3/breakfast5.png",
+      "name": "Toast Egg Butter",
+      "category": "nonveg",
+      "price": "8.99"
+    },
+    {
+      "id": "16",
+      "img": "https://i.ibb.co/fSvwzpZ/breakfast6.png",
+      "name": "Full Breakfast Egg Toast",
+      "category": "nonveg",
+      "price": "9.99"
+    },
+    {
+      "id": "17",
+      "img": "https://i.ibb.co/YWxtdqc/breakfast1.png",
+      "name": "Bagel and Cream Cheese",
+      "category": "veg",
+      "price": "12.99"
+    },
+    {
+      "id": "18",
+      "img": "https://i.ibb.co/QC0KJPt/breakfast4.png",
+      "name": "Eggs Benedict",
+      "category": "veg",
+      "price": "15.99"
+    }
+  ],
+  "All": [
+    {
+      "id": "1",
+      "img": "https://i.ibb.co/Kmvyhdn/dinner6.png",
+      "name": "French fries with cheese",
+      "price": "19.99",
+      "category": "veg"
+    },
+    {
+      "id": "2",
+      "img": "https://i.ibb.co/qFcr7vr/dinner2.png",
+      "name": "Lemony Salmon",
+      "price": "12.99",
+      "category": "veg"
+    },
+    {
+      "id": "3",
+      "img": "https://i.ibb.co/pLtqXfB/dinner3.png",
+      "name": "Pork Tenderiain",
+      "price": "11.99",
+      "category": "nonveg"
+    },
+    {
+      "id": "4",
+      "img": "https://i.ibb.co/fqzz97r/dinner1.png",
+      "name": "Salmon With Grapefruits",
+      "price": "10.60",
+      "category": "veg"
+    },
+    {
+      "id": "5",
+      "img": "https://i.ibb.co/Kynmst1/dinner5.png",
+      "name": "Curlic Butter baked salmon",
+      "category": "veg",
+      "price": "7.99"
+    },
+    {
+      "id": "6",
+      "img": "https://i.ibb.co/McDVR1C/dinner4.png",
+      "name": "Baked Chiken",
+      "category": "nonveg",
+      "price": "10.99"
+    },
+    {
+      "id": "7",
+      "img": "https://i.ibb.co/Vttm4HL/lunch6.png",
+      "name": "Honet Soy Salmon",
+      "category": "veg",
+      "price": "10.99"
+    },
+    {
+      "id": "8",
+      "img": "https://i.ibb.co/R3rLv58/lunch4.png",
+      "name": "Indian Lunch",
+      "category": "veg",
+      "price": "8.99"
+    },
+    {
+      "id": "9",
+      "img": "https://i.ibb.co/zxQ2mR3/lunch5.png",
+      "name": "Beaf Steak",
+      "category": "nonveg",
+      "price": "10.99"
+    },
+    {
+      "id": "10",
+      "img": "https://i.ibb.co/Ph7HZpK/lunch1.png",
+      "name": "Healthy Meal plan",
+      "category": "veg",
+      "price": "9.99"
+    },
+    {
+      "id": "11",
+      "img": "https://i.ibb.co/5BPBJKH/lunch3.png",
+      "name": "Trragon_Rubbed_salmon",
+      "category": "veg",
+      "price": "8.99"
+    },
+    {
+      "id": "12",
+      "img": "https://i.ibb.co/8Yfk9Y4/lunch2.png",
+      "name": "Fried Chicken Bento",
+      "category": "nonveg",
+      "price": "11.99"
+    },
+    {
+      "id": "13",
+      "img": "https://i.ibb.co/Ph7HZpK/lunch1.png",
+      "name": "Healthy Meal plan",
+      "category": "veg",
+      "price": "9.99"
+    },
+    {
+      "id": "14",
+      "img": "https://i.ibb.co/Kynmst1/dinner5.png",
+      "name": "Curlic Butter baked salmon",
+      "category": "veg",
+      "price": "7.99"
+    },
+    {
+      "id": "15",
+      "img": "https://i.ibb.co/pwjPPM3/breakfast5.png",
+      "name": "Toast Egg Butter",
+      "category": "nonveg",
+      "price": "8.99"
+    },
+    {
+      "id": "16",
+      "img": "https://i.ibb.co/fSvwzpZ/breakfast6.png",
+      "name": "Full Breakfast Egg Toast",
+      "category": "nonveg",
+      "price": "9.99"
+    },
+    {
+      "id": "17",
+      "img": "https://i.ibb.co/YWxtdqc/breakfast1.png",
+      "name": "Bagel and Cream Cheese",
+      "category": "veg",
+      "price": "12.99"
+    },
+    {
+      "id": "18",
+      "img": "https://i.ibb.co/QC0KJPt/breakfast4.png",
+      "name": "Eggs Benedict",
+      "category": "veg",
+      "price": "15.99"
+    }
+  ],
+  "cart": [
+    {
+      "id": "14",
+      "img": "https://i.ibb.co/Kynmst1/dinner5.png",
+      "name": "Curlic Butter baked salmon",
+      "category": "veg",
+      "price": "7.99"
+    },
+    {
+      "id": "15",
+      "img": "https://i.ibb.co/pwjPPM3/breakfast5.png",
+      "name": "Toast Egg Butter",
+      "category": "nonveg",
+      "price": "8.99"
+    }
+  ]
 }

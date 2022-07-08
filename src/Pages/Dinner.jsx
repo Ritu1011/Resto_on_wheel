@@ -98,7 +98,7 @@ function Dinner() {
       method: "GET",
       params:{
         _page:page,
-        _limit:8,
+        _limit:6,
         }
     })
       .then((res) => {
