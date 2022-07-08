@@ -9,6 +9,8 @@ function  BreakfstCart(){
    const navigate=useNavigate()
     const [data, setData] = useState([]);
     const params = useParams();
+    const [sort,setSort] =useState("asc")
+
     useEffect(() => {
       setLoading(true);
       const { id } = params;
@@ -24,7 +26,8 @@ function  BreakfstCart(){
           setLoading(false);
         });
     }, [params.id]);
-console.log(data ,"data")
+
+    console.log(data ,"data")
     const postData=()=>{
       axios.post(`http://localhost:8080/cart`,{...data}).then(()=>{
       alert("data added to cart ")
@@ -34,6 +37,7 @@ console.log(data ,"data")
 
     return (
         <div>
+        
           {loading && <div>...Loading</div>}
         
              <div className="container_D">

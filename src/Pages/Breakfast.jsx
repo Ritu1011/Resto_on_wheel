@@ -89,7 +89,7 @@ function Breakfast() {
   const [loading, setLoading] = useState(true);
   const [data, setData] = useState([]);
   const [page,setPage] =useState(1)
-  
+  const [sort,setSort] =useState("asc")
 
   useEffect(() => {
     setLoading(true);
@@ -112,7 +112,9 @@ function Breakfast() {
   console.log(data);
   return (
     <>
+      <button  onClick={() =>setSort(sort === "asc" ? "desc" : "asc")}  >Sort </button>
     <div className="container">
+      
       {loading && <div>...Loading</div>}
       {data.map((item) => (
 

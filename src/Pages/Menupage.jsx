@@ -104,7 +104,7 @@ function Menupage() {
       method: "GET",
       params:{
         _page:page,
-        _limit:8,
+        _limit:3,
         }
     })
       .then((res) => {
@@ -134,7 +134,7 @@ function Menupage() {
       ))}
 <div className="pagination_btn">
     <button title="PREV" id="PREV" disabled={page===1}   onClick={()=>setPage(page-1)} className="pagination"> Prev</button>
-    <button id="NEXT" disabled={page===2} title="NEXT" onClick={()=>setPage(page+1)} className="pagination">Next</button>
+    <button id="NEXT" disabled={page===6} title="NEXT" onClick={()=>setPage(page+1)} className="pagination">Next</button>
     </div>
     </div>
   

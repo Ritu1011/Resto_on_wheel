@@ -259,20 +259,5 @@
       "price": "15.99"
     }
   ],
-  "cart": [
-    {
-      "id": "14",
-      "img": "https://i.ibb.co/Kynmst1/dinner5.png",
-      "name": "Curlic Butter baked salmon",
-      "category": "veg",
-      "price": "7.99"
-    },
-    {
-      "id": "15",
-      "img": "https://i.ibb.co/pwjPPM3/breakfast5.png",
-      "name": "Toast Egg Butter",
-      "category": "nonveg",
-      "price": "8.99"
-    }
-  ]
+  "cart": []
 }
