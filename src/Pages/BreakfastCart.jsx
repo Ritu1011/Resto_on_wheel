@@ -28,6 +28,7 @@ function  BreakfstCart(){
     }, [params.id]);
 
     console.log(data ,"data")
+  
     const postData=()=>{
       axios.post(`http://localhost:8080/cart`,{...data}).then(()=>{
       alert("data added to cart ")

@@ -89,7 +89,7 @@ function Breakfast() {
   const [loading, setLoading] = useState(true);
   const [data, setData] = useState([]);
   const [page,setPage] =useState(1)
-  const [sort,setSort] =useState("asc")
+ 
 
   useEffect(() => {
     setLoading(true);
@@ -110,9 +110,37 @@ function Breakfast() {
       });
   }, [page]);
   console.log(data);
+
+  const handelSort = (by) => {
+    if (by == "PLH") {
+      let sorted = data.sort((a, b) => {
+        return a.price - b.price;
+      });
+
+      let newData = [...sorted];
+      setData(newData);
+    } else if (by == "PHL") {
+      let sorted = data.sort((a, b) => {
+        return b.price - a.price;
+      });
+      let newData = [...sorted];
+      setData(newData);
+    } 
+  };
   return (
     <>
-      <button  onClick={() =>setSort(sort === "asc" ? "desc" : "asc")}  >Sort </button>
+  
+    <select style={{marginTop:"20px",width:"200px",height:"40px" ,border:"2px solid black",marginLeft:"40px"}}
+          id="itemsorter"
+          onChange={(e) => {
+            handelSort(e.target.value);
+          }}
+        >
+          <option value="POP" >Sort by Price</option>
+          <option value="PLH">Low to High</option>
+          <option value="PHL">High to Low</option>
+          
+        </select>
     <div className="container">
       
       {loading && <div>...Loading</div>}

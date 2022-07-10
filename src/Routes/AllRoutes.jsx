@@ -1,7 +1,7 @@
 import { Routes, Route} from "react-router-dom";
 import HomePage from "../Pages/HomePage";
 import Menupage from "../Pages/Menupage";
-
+import { Checkout } from "../Pages/Checkout";
 import Login from "../Pages/Login";
 import Location from "../Pages/Location";
 import Cart from "../Pages/Cart";
@@ -11,6 +11,8 @@ import Dinner from "../Pages/Dinner";
 import DinnerCart from "../Pages/DinnerCart";
 import MenuCart from "../Pages/MenuCart";
 import SignIn from "../Pages/SignIn";
+import { Payment } from "../Pages/Payment";
+import OrderPlaced from "../Pages/OrderPlaced";
 
 function AllRoutes() {
 return (
@@ -22,6 +24,9 @@ return (
             <Route path="/cart" element={<Cart/>} />
             <Route path="/menupage" element={<Menupage/>} />
             <Route path="/menupage/:id" element={<MenuCart/>} />
+            <Route path="/orderpacled" element={<OrderPlaced/>} />
+            <Route path="/payment" element={<Payment/>} />
+            <Route path="/checkout" element={<Checkout/>} />
             <Route path="/location" element={<Location/>} />
             <Route path="/login" element={<Login/>} />
           <Route path="/breakfast" element={<Breakfast/>} />

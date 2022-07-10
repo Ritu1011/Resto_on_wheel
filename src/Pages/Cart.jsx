@@ -1,11 +1,14 @@
 import React from 'react'
 import { useEffect } from 'react'
 import { useState } from 'react'
+import "./Cart.css"
 import axios from 'axios'
+import { useNavigate } from 'react-router-dom'
 const Cart = () => {
   const [addCart,setAddCart]=useState([])
   const [loading, setLoading] = useState(true);
 const [data, setData] = useState([]);
+const navigate=useNavigate()
 
 useEffect(()=>{
   getData()
@@ -40,6 +43,9 @@ let Deletedata=async(id)=>{
     })
     getData()   
   }
+  const postData1=()=>{
+    alert("address")
+}
 
 
 
@@ -68,7 +74,7 @@ let Deletedata=async(id)=>{
         </div>
         <div className='price'>
         <div className='pricename'>Discount</div>
-        <div className='totalprice'>00</div>
+        <div className='totalprice'>0.00</div>
         </div>
         <div className='price'>
         <div className='pricename'>Delivery Charges</div>
@@ -80,9 +86,11 @@ let Deletedata=async(id)=>{
         <div className='totalprice1'>₹{total+49}</div>
         </div>
         <hr />
-        <p style={{color:"gray",fontSize:"13px"}}>Save extra ₹12 using 12 SuperCoins on the next step
-Available Balance 🪙 12</p>
-        <button className='placeOrder'>PLACE ORDER</button>
+        <p style={{color:"gray",fontSize:"13px"}}></p>
+        <button  onClick={()=>{
+             navigate ("/checkout")
+             return postData1()
+            }}  className='placeOrder'>CHECKOUT</button>
      
       </div>
       
