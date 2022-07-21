@@ -47,7 +47,9 @@ let Deletedata=async(id)=>{
     alert("address")
 }
 
+const ADDMOREPRODUCT=()=>{
 
+}
 
   return (
     <>
@@ -58,9 +60,14 @@ let Deletedata=async(id)=>{
           <div><img src={item.img} alt="" className="menu_img" /> </div>
           <div className="menu_description">
           <h3 > {item.name}</h3>
+          <div style={{display:"flex",width:"80px",height:"30px" ,justifyContent:"space-between",alignItems:"center",textAlign:"center"}}>
+             <div style={{border:"1px solid black",width:"33.33%",height:"100%"}} onClick={()=>ADDMOREPRODUCT(-1)}>-</div>
+             <div style={{border:"1px solid black",width:"33.33%",height:"100%"}}>0</div>
+             <div style={{border:"1px solid black",width:"33.33%",height:"100%"}} onClick={()=>ADDMOREPRODUCT(+1)}>+</div>
+           </div>
           <h4> {Number(item.price)}</h4>
           <button className="menu_add" onClick={()=>{Deletedata(item.id); window.location.reload()}} >Remove</button>
-          {/* <Link to={`/menupage/${item.id}`}><button className="menu_details">Details</button></Link> */}
+          
           </div>
           </div>
           

@@ -2,9 +2,11 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { Link ,useParams } from "react-router-dom";
 import "./Style.css"
+import { useNavigate } from "react-router-dom";
 
 function  MenuCart(){
    const [loading, setLoading] = useState(true);
+   const navigate=useNavigate()
     const [data, setData] = useState([]);
     const [cart ,setCart]=useState([]);
     const params = useParams();
@@ -24,8 +26,10 @@ function  MenuCart(){
         });
     }, [params.id]);
 
-    const AddtoCart=()=>{
-      
+    const postData=()=>{
+      axios.post(`http://localhost:8080/cart`,{...data}).then(()=>{
+      alert("data added to cart ")
+         })
     }
 
     return (
@@ -49,7 +53,11 @@ function  MenuCart(){
                </div>
                <h3  className="name_D"> {data?.price}</h3>
                <div style={{display:"flex",justifyContent:"space-evenly",width:"50%"}}>
-               <button className="Add" onClick={AddtoCart}><h > ADD TO CART </h></button>
+               <button  onClick={()=>{
+             navigate ("/cart")
+             return postData()
+             }} 
+             className="Add"><h2> ADD TO CART </h2></button>
               <Link to="/"> <button className="Add"><h2> CANCLE </h2></button></Link>
                </div>
               </div>

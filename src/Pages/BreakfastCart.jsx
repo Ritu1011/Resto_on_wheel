@@ -33,7 +33,7 @@ function  BreakfstCart(){
       axios.post(`http://localhost:8080/cart`,{...data}).then(()=>{
       alert("data added to cart ")
          })
-  }
+    }
 
 
     return (
