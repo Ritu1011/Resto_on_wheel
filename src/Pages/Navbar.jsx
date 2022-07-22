@@ -3,10 +3,13 @@ import React from 'react'
 import logo from "../img/logo.png"
 import '../App.css';
 import { useState } from "react";
+import { useEffect } from "react";
+import axios from "axios";
 
 const Navbar = () => {
   const [cartCount,setCartCount]=useState(0)
-
+ 
+        
 
   
   return (
@@ -19,7 +22,7 @@ const Navbar = () => {
     <Link to="/menupage" className="Link">Menu</Link>
     <Link to="/location" className="Link">Location</Link>
     <Link to="/cart" className="Link">Cart:{cartCount}</Link>
-     <Link to="/login" className="Link2 nav_button">Login</Link>
+     <Link to="/signIn" className="Link2 nav_button">Sign Up</Link>
      
     </div>
       </nav>

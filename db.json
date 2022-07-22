@@ -259,5 +259,27 @@
       "price": "15.99"
     }
   ],
-  "cart": []
+  "cart": [
+    {
+      "id": "3",
+      "img": "https://i.ibb.co/pLtqXfB/dinner3.png",
+      "name": "Pork Tenderiain",
+      "price": "11.99",
+      "category": "nonveg"
+    },
+    {
+      "id": "2",
+      "img": "https://i.ibb.co/qFcr7vr/dinner2.png",
+      "name": "Lemony Salmon",
+      "price": "12.99",
+      "category": "veg"
+    },
+    {
+      "id": "5",
+      "img": "https://i.ibb.co/Kynmst1/dinner5.png",
+      "name": "Curlic Butter baked salmon",
+      "category": "veg",
+      "price": "7.99"
+    }
+  ]
 }
