@@ -73,7 +73,7 @@ var navigate=useNavigate()
       <input type="password" placeholder='Password' name='password' onChange={getdata}/><br />
       
       <button className="login_btn" variant="primary" onClick={addData} type="submit">Log In</button>
-      <p>Don't have an account? <Link to="/signin" className='sign_link'> Sign up </Link></p>
+      <p>Don't have an account? <Link to="/" className='sign_link'> Sign up </Link></p>
       <div style={{display:"flex"}} className="google"> <p>
 
       Continue With Google 

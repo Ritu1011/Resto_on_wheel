@@ -63,7 +63,7 @@ function  MenuCart(){
              return postData()
              }} 
              className="Add"><h2> ADD TO CART </h2></button>
-              <Link to="/"> <button className="Add"><h2> CANCLE </h2></button></Link>
+              <Link to="/home"> <button className="Add"><h2> CANCLE </h2></button></Link>
                </div>
               </div>
            
