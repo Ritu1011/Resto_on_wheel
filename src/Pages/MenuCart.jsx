@@ -3,6 +3,8 @@ import { useEffect, useState } from "react";
 import { Link ,useParams } from "react-router-dom";
 import "./Style.css"
 import { useNavigate } from "react-router-dom";
+import Navbar from "./Navbar";
+import { Footer } from "./Footer/Footer";
 
 function  MenuCart(){
    const [loading, setLoading] = useState(true);
@@ -32,7 +34,10 @@ function  MenuCart(){
          })
     }
 
+
     return (
+      <>
+      <Navbar></Navbar>
         <div>
           {loading && <div>...Loading</div>}
         
@@ -64,6 +69,8 @@ function  MenuCart(){
            
             </div>
         </div>
+        <Footer></Footer>
+        </>
       );
     }
     

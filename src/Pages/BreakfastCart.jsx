@@ -3,6 +3,8 @@ import { useEffect, useState } from "react";
 import { Link ,useParams } from "react-router-dom";
 import "./Style.css"
 import { useNavigate } from "react-router-dom";
+import Navbar from "./Navbar";
+import { Footer } from "./Footer/Footer";
 
 function  BreakfstCart(){
    const [loading, setLoading] = useState(true);
@@ -37,6 +39,8 @@ function  BreakfstCart(){
 
 
     return (
+      <>
+      <Navbar></Navbar>
         <div>
         
           {loading && <div>...Loading</div>}
@@ -65,12 +69,14 @@ function  BreakfstCart(){
              }} 
              className="Add"><h2> ADD TO CART </h2></button>
 
-              <Link to="/"> <button className="Add"><h2> CANCLE </h2></button></Link>
+              <Link to="/home"> <button className="Add"><h2> CANCLE </h2></button></Link>
                </div>
               </div>
            
             </div>
         </div>
+        <Footer></Footer>
+        </>
       );
     }
     

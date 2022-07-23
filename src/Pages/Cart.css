@@ -2,21 +2,19 @@
 /* Cart CSS */
 .cartContainer{
     width: 100%;
-    /* border: 1px solid rgb(11, 11, 11); */
     display: flex;
     justify-content: space-around;
     }
     .left{
       width: 70%;
-      /* height: 400px; */
-      /* border: 2px solid rgb(62, 220, 56); */
+   
     
     }
     .right{
       width: 23%;
     
       height: 400px;
-      /* border: 1px solid rgb(78, 56, 220); */
+   
     }
     .price{
       width: 90%;
@@ -24,7 +22,6 @@
       justify-content: space-between;
       margin-top: 10px;
       margin-bottom: 20px;
-      /* border: 1px solid rgb(78, 56, 220); */
       width: 100%;
     }
     .pricename{

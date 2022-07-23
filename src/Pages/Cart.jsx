@@ -1,5 +1,7 @@
 import React from 'react'
 import { useEffect } from 'react'
+import Navbar from './Navbar'
+
 import { useState } from 'react'
 import "./Cart.css"
 import axios from 'axios'
@@ -8,6 +10,8 @@ const Cart = () => {
   const [loading, setLoading] = useState(true);
 const [data, setData] = useState([]);
 const navigate=useNavigate()
+const [count,setCount]=useState(1)
+console.log(data.length,"length")
 
 const getData=()=>{
  axios.get(`http://localhost:8080/cart`)
@@ -20,14 +24,16 @@ const getData=()=>{
   setLoading(false);
 });
 }
-console.log(data.length)
+
 
 useEffect(() => {
   getData()
   setLoading(true);
    },[]);
+   
 
 const total = data.map(pro =>Number(pro.price)).reduce((prev, curr) => prev + curr, 0);
+console.log(data,"cart")
 let Deletedata=async(id)=>{
     await fetch(`http://localhost:8080/cart/${id}`, {
          method: "DELETE",
@@ -39,11 +45,26 @@ let Deletedata=async(id)=>{
 }
 
 const ADDMOREPRODUCT=()=>{
-
+  if(count==5){
+    alert("miximum limit reached")
+    return
+  
+  }
+  setCount(count+1)
 }
+const SUBMOREPRODUCT=(e)=>{
+  if(count>1){
+    setCount(count-1 )
+    }
+    else{
+      alert("minimum limit reached")
+    }
+  }
+  
 
   return (
-    <>
+    <>  
+    <Navbar></Navbar>
   <div className='cartContainer'>
   <div className='left'>
   {data.map((item) => (
@@ -52,9 +73,9 @@ const ADDMOREPRODUCT=()=>{
           <div className="menu_description">
           <h3>{item.name}</h3>
           <div style={{display:"flex",width:"80px",height:"30px" ,justifyContent:"space-between",alignItems:"center",textAlign:"center"}}>
-             <div style={{border:"1px solid black",width:"33.33%",height:"100%"}} onClick={()=>ADDMOREPRODUCT(-1)}>-</div>
-             <div style={{border:"1px solid black",width:"33.33%",height:"100%"}}>0</div>
-             <div style={{border:"1px solid black",width:"33.33%",height:"100%"}} onClick={()=>ADDMOREPRODUCT(+1)}>+</div>
+             <div style={{border:"1px solid black",width:"33.33%",height:"100%",cursor:"pointer"}} onClick={SUBMOREPRODUCT} >-</div>
+             <div style={{border:"1px solid black",width:"33.33%",height:"100%"}}>{count}</div>
+             <div style={{border:"1px solid black",width:"33.33%",height:"100%",cursor:"pointer"}} onClick={ADDMOREPRODUCT} >+</div>
            </div>
           <h4> {Number(item.price)}</h4>
          <button className="menu_add" onClick={()=>{Deletedata(item.id); window.location.reload()}} >Remove</button>
@@ -63,6 +84,7 @@ const ADDMOREPRODUCT=()=>{
           </div>
           
       ))}
+      
   </div>
   <div className='right'>
     <div className='pricedetails'>
@@ -94,6 +116,7 @@ const ADDMOREPRODUCT=()=>{
       
   </div>
 </div>
+
     </>
   )
 }

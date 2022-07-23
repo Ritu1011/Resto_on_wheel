@@ -6,6 +6,8 @@ import {Link} from "react-router-dom"
 import {ImCross}from 'react-icons/im';
 import { useNavigate } from "react-router-dom";
 import { Payment } from "./Payment";
+import Navbar from "./Navbar";
+
 import "./Payment.css"
 export const Checkout =()=>{
     const navigate = useNavigate()
@@ -43,7 +45,8 @@ export const Checkout =()=>{
    }
 console.log("adde",address)
     return (
-
+<>
+<Navbar></Navbar>
     <div className="checkout"> 
         <div className="rightB">
             <div  className="detailsB">
@@ -111,5 +114,7 @@ console.log("adde",address)
 
         </div>
     </div>
+    
+    </>
     
 )}

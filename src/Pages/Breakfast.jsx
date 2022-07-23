@@ -5,7 +5,8 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 import "./Style.css"
-
+import Navbar from "../Pages/Navbar";
+import { Footer } from "./Footer/Footer";
 function Breakfast() {
   const [loading, setLoading] = useState(true);
   const [data, setData] = useState([]);
@@ -44,7 +45,7 @@ function Breakfast() {
   };
   return (
     <>
-  
+  <Navbar></Navbar>
     <select style={{marginTop:"20px",width:"200px",height:"40px" ,border:"2px solid black",marginLeft:"40px"}}
           id="itemsorter"
           onChange={(e) => {
@@ -71,7 +72,7 @@ function Breakfast() {
       ))}
     </div>
     
-  
+  <Footer></Footer>
     
     </>
   );

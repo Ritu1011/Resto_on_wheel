@@ -1,8 +1,7 @@
 
 
 import "./Checkout.css"
-import { useEffect, useState } from "react"
-import {Link} from "react-router-dom"
+import { useState } from "react"
 import {ImCross}from 'react-icons/im';
 import { useNavigate } from "react-router-dom";
 import "./Payment.css"
@@ -15,6 +14,9 @@ export const Payment =()=>{
         name:"",
         expiry:"",
         })
+        
+
+       
     const toggleModal = () => {
       setModal(!modal);
     };
@@ -98,7 +100,7 @@ export const Payment =()=>{
                         <div id="carddetail">
                              <div id="pay_CardNumbar">
                                 <label><p>Card Numbar</p></label>
-                                <input type="text" placeholder="XXXX XXXX XXXX"  onChange={handledataAdd} id="CVV"/>
+                                <input type="Number" placeholder="XXXX XXXX XXXX"  onChange={handledataAdd} id="CVV"/>
                         
                         </div>
                          
@@ -119,15 +121,7 @@ export const Payment =()=>{
                             </div>
                            <div id="for_details"><p>Your card details will be saved securely for future transactions, based on the industry standards.</p></div>
                         <div id="button2">
-
-
-
-                            {/* ////////// */}
                             <button  onClick={handlpayment}>Save Details</button>
-
-
-
-                            {/*  */}
                             </div>
                         <div id="endbox">
                         <div id="av_logo"> <p>We support domestic credit and debit cards of following brands</p></div>
@@ -153,8 +147,6 @@ export const Payment =()=>{
                <div>Name: {payment.name}</div>
                    <div>CVV: {payment.CVV}</div>
                    <div>Expir Data: {payment.expiry}</div>
-                   {/* <div>Country: {address.country}</div>
-                   <div>Pincode: {address.pincode}</div> */}
                </div>
               <button className="pay" style={{marginTop:"50px",background:" #f1492c",color:'white'}} onClick={orderPlaced}>Proceed To Payment</button>
            

@@ -295,8 +295,7 @@ input{
     height: 30px;
     width: 90%;
 }
-input:focus{
-}
+
 #payCardNumbar{
     height: 30%;
     width: 100%;

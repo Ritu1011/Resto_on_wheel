@@ -56,7 +56,7 @@ var navigate=useNavigate()
             } else {
              localStorage.setItem("user_login", JSON.stringify(userlogin))
              alert("user login succesfulyy");
-                navigate("/")
+                navigate("/home")
             }
         }
     }

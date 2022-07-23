@@ -2,7 +2,8 @@ import React from 'react'
 import logo from "../img/logo.png"
 import { Link, useNavigate } from 'react-router-dom'
 import "./Login.css"
-import {  toast } from 'react-toastify';
+
+import Navbar from './Navbar';
 import { useState } from 'react';
 const SignIn = () => {
   const [inpval, setInpval] = useState({
@@ -57,8 +58,9 @@ const addData = (e) => {
 }
 
   return (
-    <>
+    <> 
     <form className='loginBox'>
+
       <img className='.loginBox_img' src={logo} alt="" style={{wigth:"100px",height:"100px",marginBottom:"",margin:" 30px auto  "}}/>
       <input type="text" placeholder='Name....' name='name' onChange={getdata}/>
       <input type="email" placeholder='Email....'  name='email' onChange={getdata}/>
@@ -68,11 +70,7 @@ const addData = (e) => {
 
       <button className="login_btn" variant="primary" onClick={addData} type="submit"> Submit</button>
       <p> <Link to="/login" className='sign_link'> Already have an account </Link></p>
-      <div style={{display:"flex"}} className="google"> <p>
-
-      Continue With Google 
-        </p> 
-      <img src="https://red-onion-food.netlify.app/static/media/g.3e6e2816.svg" alt="" /></div>
+     
     </form>
     </>
   )

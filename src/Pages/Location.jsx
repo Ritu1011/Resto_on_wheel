@@ -1,32 +1,8 @@
-// import React, { useState } from 'react'
 
-// const Location = () => {
-//   const [state,setState]=useState(true)
-//   const toggle=()=>{
-//     setState(!state)
-//   }
-
-//   return (
-//     <>
-
-//     <div>
-//     <div style={{margin:"auto",border:"1px solid black",width:"50%",height:"400px"}}>
-// <button onClick={toggle} className={'toogle-button' + (state ? "toggle==close":"")}>
-// {state ?'close' : 'open'}
-// </button>
-
-
-//     </div>
-//     </div>
-//     </>
-//   )
-// }
-
-// export default Location
 import React, { useState } from "react";
 import "./Location.css"
-
-
+import Navbar from "./Navbar";
+import { Footer } from "./Footer/Footer";
 
 const Location = () => {
   const [modal, setModal] = useState(false);
@@ -43,6 +19,7 @@ const Location = () => {
 
   return (
     <>
+    <Navbar></Navbar>
     <div className="mainLocation">
       <div>
     <div className=" banner-content">
@@ -53,9 +30,9 @@ const Location = () => {
      </div>
       </div>
       {modal && (
-        <div className="modal">
+        <div className="modal">  
           <div onClick={toggleModal} className="overlay"></div>
-          <div className="modal-content">
+          <div className="modal-content" style={{display:"flex"}}>
           <button className="close-modal" onClick={toggleModal} style={{fontSize:"20px",fontWeight:"500"}}>
               x
             </button>
@@ -86,15 +63,14 @@ const Location = () => {
   <td>3:00</td>
   <td>6:00</td>
   </tr>
-</table>
-           
-          </div>
-        </div>
+</table> 
+</div>
+  </div>
 
       )}
-     <p></p>
+    
      </div>
-     
+     <Footer></Footer>
     </>
   )
 }
