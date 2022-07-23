@@ -259,27 +259,5 @@
       "price": "160"
     }
   ],
-  "cart": [
-    {
-      "id": "1",
-      "img": "https://i.ibb.co/Kmvyhdn/dinner6.png",
-      "name": "French fries with cheese",
-      "price": "90",
-      "category": "veg"
-    },
-    {
-      "id": "2",
-      "img": "https://i.ibb.co/qFcr7vr/dinner2.png",
-      "name": "Lemony Salmon",
-      "price": "120",
-      "category": "veg"
-    },
-    {
-      "id": "15",
-      "img": "https://i.ibb.co/pwjPPM3/breakfast5.png",
-      "name": "Toast Egg Butter",
-      "category": "nonveg",
-      "price": "80"
-    }
-  ]
+  "cart": []
 }

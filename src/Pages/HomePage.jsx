@@ -16,9 +16,9 @@ const HomePage = () => {
  <div className='nav2'>
   <div className='nav2_container'>
     <Link to="/breakfast" className='hover'>Breakfast</Link>
-    <Link  to="/" className='hover'>Lunch</Link>
+    <Link  to="/home" className='hover'>Lunch</Link>
     <Link  to="/dinner" className='hover'>Dinner</Link>
-    <Link  to="/" className='seeAll'>See All</Link>
+    <Link  to="/home" className='seeAll'>See All</Link>
   </div>
 
   </div>
