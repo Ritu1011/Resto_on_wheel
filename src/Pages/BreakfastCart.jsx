@@ -11,13 +11,13 @@ function  BreakfstCart(){
    const navigate=useNavigate()
     const [data, setData] = useState([]);
     const params = useParams();
-    const [sort,setSort] =useState("asc")
+    
 
     useEffect(() => {
       setLoading(true);
       const { id } = params;
       axios({
-        url: `http://localhost:8080/Breakfast/${id}`,
+        url: `https://resto-backed.herokuapp.com/breakfast/${id}`,
         method: "GET"
       })
         .then((res) => {
@@ -29,10 +29,10 @@ function  BreakfstCart(){
         });
     }, [params.id]);
 
-    console.log(data ,"data")
+    // console.log(data ,"data")
   
     const postData=()=>{
-      axios.post(`http://localhost:8080/cart`,{...data}).then(()=>{
+      axios.post(`https://resto-backed.herokuapp.com/cart`,{...data}).then(()=>{
       alert("data added to cart ")
          })
     }
@@ -63,9 +63,9 @@ function  BreakfstCart(){
                <h3  className="name_D"> {data?.price}</h3>
                <div style={{display:"flex",justifyContent:"space-evenly",width:"50%"}}>
 
-             <button  onClick={()=>{
+             <button  onClick={(id)=>{
              navigate ("/cart")
-             return postData()
+             return postData(id)
              }} 
              className="Add"><h2> ADD TO CART </h2></button>
 

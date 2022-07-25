@@ -11,10 +11,10 @@ const Cart = () => {
 const [data, setData] = useState([]);
 const navigate=useNavigate()
 const [count,setCount]=useState(1)
-console.log(data.length,"length")
+
 
 const getData=()=>{
- axios.get(`http://localhost:8080/cart`)
+ axios.get(`https://resto-backed.herokuapp.com/cart`)
  .then((res) => {
   setLoading(false);
   setData(res.data);
@@ -33,13 +33,17 @@ useEffect(() => {
    
 
 const total = data.map(pro =>Number(pro.price)).reduce((prev, curr) => prev + curr, 0);
-console.log(data,"cart")
+// console.log(data,"cart")
 let Deletedata=async(id)=>{
-    await fetch(`http://localhost:8080/cart/${id}`, {
+        console.log(id)
+    await fetch(`https://resto-backed.herokuapp.com/cart/${id}`, {
          method: "DELETE",
-    })
+         })
     getData()   
+   
   }
+  
+
   const postData1=()=>{
     alert("address")
 }
@@ -68,7 +72,7 @@ const SUBMOREPRODUCT=(e)=>{
   <div className='cartContainer'>
   <div className='left'>
   {data.map((item) => (
-          <div className="menu_container" key={item.id}>
+          <div className="menu_container" key={item._id}>
           <div><img src={item.img} alt="" className="menu_img" /></div>
           <div className="menu_description">
           <h3>{item.name}</h3>
@@ -78,7 +82,7 @@ const SUBMOREPRODUCT=(e)=>{
              <div style={{border:"1px solid black",width:"33.33%",height:"100%",cursor:"pointer"}} onClick={ADDMOREPRODUCT} >+</div>
            </div>
           <h4> {Number(item.price)}</h4>
-         <button className="menu_add" onClick={()=>{Deletedata(item.id); window.location.reload()}} >Remove</button>
+         <button className="menu_add" onClick={()=>{Deletedata(item._id) }} >Remove</button>
           
           </div>
           </div>

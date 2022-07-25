@@ -14,7 +14,7 @@ function Breakfast() {
   useEffect(() => {
     setLoading(true);
     axios({
-      url: "http://localhost:8080/Breakfast",
+      url: "https://resto-backed.herokuapp.com/breakfast",
       method: "GET",
       })
       .then((res) => {
@@ -63,7 +63,7 @@ function Breakfast() {
       {data.map((item) => (
 
         <div  key={item.id}>
-          <div><Link to={`/breakfast/${item.id}`}><img src={item.img} alt="" /></Link>  </div>
+          <div><Link to={`/breakfast/${item._id}`}><img src={item.img} alt="" /></Link>  </div>
           <div className="description">
           <h3 > {item.name}</h3>
           <h4> {item.price}</h4>

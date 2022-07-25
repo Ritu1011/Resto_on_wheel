@@ -17,7 +17,7 @@ function  DinnerCart(){
       setLoading(true);
       const { id } = params;
       axios({
-        url: `http://localhost:8080/Dinner/${id}`,
+        url: `https://resto-backed.herokuapp.com/dinner/${id}`,
         method: "GET"
       })
         .then((res) => {
@@ -29,10 +29,10 @@ function  DinnerCart(){
         });
     }, [params.id]);
 
-    console.log(data ,"data")
+    // console.log(data ,"data")
   
     const postData=()=>{
-      axios.post(`http://localhost:8080/cart`,{...data}).then(()=>{
+      axios.post(`https://resto-backed.herokuapp.com/cart`,{...data}).then(()=>{
       alert("data added to cart ")
          })
   }
@@ -62,8 +62,10 @@ function  DinnerCart(){
                </div>
                <h3  className="name_D"> {data?.price}</h3>
                <div style={{display:"flex",justifyContent:"space-evenly",width:"50%"}}>
-
-             <button  
+            <button  onClick={(id)=>{
+             navigate ("/cart")
+             return postData(id)
+             }} 
              className="Add"><h2> ADD TO CART </h2></button>
 
               <Link to="/home"> <button className="Add"><h2> CANCLE </h2></button></Link>

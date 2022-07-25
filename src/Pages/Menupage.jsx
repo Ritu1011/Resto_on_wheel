@@ -15,7 +15,7 @@ function Menupage() {
   useEffect(() => {
     setLoading(true);
     axios({
-      url: " http://localhost:8080/All",
+      url: "https://resto-backed.herokuapp.com/all",
       method: "GET",
       params:{
         _page:page,
@@ -74,9 +74,7 @@ function Menupage() {
           <h3 > {item.name}</h3>
           <h4> {item.price}</h4>
           <h4> {item.category}</h4>
-
-          
-          <Link to={`/menupage/${item.id}`}><button className="menu_details">Details</button></Link>
+          <Link to={`/menupage/${item._id}`}><button className="menu_details">Details</button></Link>
           </div>
           </div>
       ))}

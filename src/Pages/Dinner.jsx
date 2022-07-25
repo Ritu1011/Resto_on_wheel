@@ -18,13 +18,9 @@ function Dinner() {
   useEffect(() => {
     setLoading(true);
     axios({
-      url: "http://localhost:8080/Dinner",
+      url: "https://resto-backed.herokuapp.com/dinner",
       method: "GET",
-      params:{
-        _page:page,
-        _limit:8,
-        }
-    })
+      })
       .then((res) => {
         setLoading(false);
         setData(res.data);
@@ -32,7 +28,7 @@ function Dinner() {
       .catch((err) => {
         setLoading(false);
       });
-  }, [page]);
+  }, []);
   console.log(data);
 
   const handelSort = (by) => {
@@ -58,20 +54,18 @@ function Dinner() {
           id="itemsorter"
           onChange={(e) => {
             handelSort(e.target.value);
-          }}
-        >
+          }}>
           <option value="POP" >Sort by Price</option>
           <option value="PLH">Low to High</option>
           <option value="PHL">High to Low</option>
-          
-        </select>
-    <div className="container">
+          </select>
+        <div className="container">
       
       {loading && <div>...Loading</div>}
       {data.map((item) => (
 
         <div  key={item.id}>
-          <div><Link to={`/dinner/${item.id}`}><img src={item.img} alt="" /></Link>  </div>
+          <div><Link to={`/dinner/${item._id}`}><img src={item.img} alt="" /></Link>  </div>
           <div className="description">
           <h3 > {item.name}</h3>
           <h4> {item.price}</h4>

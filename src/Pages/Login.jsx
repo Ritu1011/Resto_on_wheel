@@ -55,7 +55,7 @@ var navigate=useNavigate()
                 alert("invalid details")
             } else {
              localStorage.setItem("user_login", JSON.stringify(userlogin))
-             alert("user login succesfulyy");
+             alert("user login successfully");
                 navigate("/home")
             }
         }
