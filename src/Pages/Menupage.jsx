@@ -19,7 +19,7 @@ function Menupage() {
       method: "GET",
       params:{
         _page:page,
-        _limit:3,
+        _limit:5,
         }
     })
       .then((res) => {
