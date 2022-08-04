@@ -7,6 +7,7 @@ import { useEffect } from "react";
 import { Navigate } from "react-router-dom";
 import axios from "axios";
 // FaShoppingCart
+import Serachbar from "./Serachbar";
 import { FaShoppingCart } from 'react-icons/fa';
 
 const Navbar = () => {
@@ -26,6 +27,9 @@ const Navbar = () => {
     <nav >
     <div className="left_nav">
      <Link to="/home"> <img className="logo" src={logo} alt="" /></Link>
+    </div>
+    <div>
+     <Serachbar></Serachbar>
     </div>
     <div className="right_nav">
     <Link to="/menupage" className="Link">Menu</Link>
